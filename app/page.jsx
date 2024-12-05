@@ -16,20 +16,25 @@ const Home = () => {
               Hello I&apos;m <br />
               <span className="text-accent">Ahmad Siddiqui</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting a elegant digital experiences and i am
-              proficient in various programming languages and technologies.
+            <p className="max-w-[580px] mb-9 text-white/80 text-justify">
+              I am a skilled Full Stack Developer specializing in Node.js and
+              NestJS within the MERN stack. Proficient in building
+              high-performance, scalable applications with Next.js, I integrate
+              front-end and back-end technologies to deliver tailored solutions
+              that meet business objectives.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <a href="https://drive.google.com/uc?export=download&id=1Rz388do_ydu02RkcflADJ4Ar4DQ5330_">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"

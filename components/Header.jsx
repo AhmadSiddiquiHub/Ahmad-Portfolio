@@ -2,22 +2,20 @@ import Link from "next/link";
 import Nav from "./Nav";
 import { Button } from "./ui/button";
 import MobileNav from "./MobileNav";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-white">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-4xl font-semibold">
-            Ahmad
-            <span className="text-accent">.</span>
-          </h1>
+          <Image src="/assets/logo.png" width={230} height={100} alt="logo" />
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href="/">
+          <Link href="/contact">
             <Button>Hire Me</Button>
           </Link>
         </div>

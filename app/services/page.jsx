@@ -8,30 +8,30 @@ const ServicePage = () => {
   const services = [
     {
       num: "01",
-      title: "Web Development",
+      title: "Full Stack Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut. Nunc vitae.",
+        "End-to-end development of web applications using JavaScript, TypeScript, and the MERN stack.",
       href: "",
     },
     {
       num: "02",
-      title: "UI/UX Design",
+      title: "Backend & Database Solutions",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut. Nunc vitae.",
+        "Crafting secure and scalable backend systems with Node.js, NestJS, and robust database solutions.",
       href: "",
     },
     {
       num: "03",
-      title: "Logo Design",
+      title: "Frontend Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut. Nunc vitae.",
+        "Building responsive, high-performance user interfaces with React, Next.js, and Redux.",
       href: "",
     },
     {
       num: "04",
-      title: "SEO",
+      title: "API Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut. Nunc vitae.",
+        "Developing and integrating efficient, scalable REST APIs for seamless communication across services.",
       href: "",
     },
   ];
@@ -64,7 +64,7 @@ const ServicePage = () => {
                     <BsArrowDownRight className="text-primary text-3xl" />
                   </Link>
                 </div>
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                <h2 className="text-[32px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {service.title}
                 </h2>
                 <p className="text-white/60">{service.description}</p>

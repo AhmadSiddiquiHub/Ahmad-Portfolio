@@ -5,9 +5,21 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
   FaNodeJs,
+  FaGithub,
+  FaWordpress,
+  FaShopify,
 } from "react-icons/fa";
+import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
+import {
+  SiMysql,
+  SiMongodb,
+  SiTypeorm,
+  SiApachekafka,
+  SiSwagger,
+  SiJira,
+} from "react-icons/si";
+import { TbBrandRedux } from "react-icons/tb";
 import { SiTailwindcss, SiNextdotjs, SiNestjs } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -20,57 +32,31 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
 const ResumePage = () => {
-  const about = {
-    title: "About me",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut. Nunc vitae.",
-    info: [
-      { fieldName: "Name", fieldValue: "Ahmad Siddiqui" },
-      { fieldName: "Phone", fieldValue: "+92 3097890103" },
-      { fieldName: "Experience", fieldValue: "12+ Years" },
-      { fieldName: "Skype", fieldValue: "luke.01" },
-      { fieldName: "Nationality", fieldValue: "American" },
-      { fieldName: "Email", fieldValue: "reachahmadsiddiqui@gmail.com" },
-      { fieldName: "On Site Job", fieldValue: "Available" },
-      { fieldName: "Languages", fieldValue: "English, Urdu" },
-    ],
-  };
-
   const experience = {
     icon: "/assets/resume/badge.svg",
     title: "My experience",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut. Nunc vitae.",
+      "With a proven track record, I have contributed to key projects, enhancing my expertise in full stack development, backend architecture, and API integrations.",
     items: [
       {
-        company: "Tech Solutions Inc.",
-        position: "Full Stack Developer",
-        duration: "2022 - Present",
+        company: "ConvexTech",
+        position: "Backend Developer",
+        duration: "Feb 2024 - Present",
       },
       {
-        company: "Web Design Studio",
-        position: "Front-End Developer Intern",
-        duration: "Summer 2021",
+        company: "Systems Limited",
+        position: "Nodejs Internship",
+        duration: "Jun 2023 - Aug 2023",
       },
       {
-        company: "E-Commerce Startup",
-        position: "Freelance Web Developer",
-        duration: "2020 - 2021",
+        company: "Computer Friends IT Services Ltd",
+        position: "Remote Reactjs Developer",
+        duration: "Nov 2022 - May 2023",
       },
       {
-        company: "Tech Academy",
-        position: "Teaching Assistent",
-        duration: "2019 - 2020",
-      },
-      {
-        company: "Digital Agency",
-        position: "UI/UX Designer",
-        duration: "2018 - 2019",
-      },
-      {
-        company: "Soft Development Firm",
-        position: "Junior Development",
-        duration: "2017 - 2018",
+        company: "LimeCircles",
+        position: "MERN Stack Developer",
+        duration: "Feb 2022 - Oct 2022",
       },
     ],
   };
@@ -79,7 +65,7 @@ const ResumePage = () => {
     icon: "/assets/resume/cap.svg",
     title: "My education",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut. Nunc vitae.",
+      "With a strong academic foundation, I have gained the knowledge and skills necessary to excel in full stack development and modern web technologies.",
     items: [
       {
         institution: "University of Gujrat",
@@ -87,19 +73,14 @@ const ResumePage = () => {
         duration: "2018 - 2022",
       },
       {
-        institution: "Code Academy",
-        degree: "Front-End Track",
-        duration: "2017",
+        institution: "Punjab College Wazirabad",
+        degree: "FSC (Pre-Engineering)",
+        duration: "2016 - 2018",
       },
       {
-        institution: "Online Course",
-        degree: "Programming Course",
-        duration: "2014 - 2016",
-      },
-      {
-        institution: "Tech Institute",
-        degree: "Certified Web Developer",
-        duration: "2013",
+        institution: "Sir Syed Pilot High School",
+        degree: "Matriculation",
+        duration: "2016",
       },
     ],
   };
@@ -107,7 +88,7 @@ const ResumePage = () => {
   const skills = {
     title: "My Skills",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut. Nunc vitae.",
+      "Below are the technical skills I have mastered and apply to deliver high-quality, scalable web solutions.",
     skillList: [
       {
         icon: <FaHtml5 />,
@@ -122,12 +103,16 @@ const ResumePage = () => {
         name: "javascript",
       },
       {
+        icon: <SiTailwindcss />,
+        name: "tailwind css",
+      },
+      {
         icon: <FaReact />,
         name: "react.js",
       },
       {
-        icon: <SiTailwindcss />,
-        name: "tailwind css",
+        icon: <TbBrandRedux />,
+        name: "redux",
       },
       {
         icon: <SiNextdotjs />,
@@ -138,9 +123,69 @@ const ResumePage = () => {
         name: "node.js",
       },
       {
+        icon: <BiLogoTypescript />,
+        name: "typecript",
+      },
+      {
         icon: <SiNestjs />,
         name: "nestjs",
       },
+      {
+        icon: <FaGithub />,
+        name: "github",
+      },
+      {
+        icon: <SiApachekafka />,
+        name: "kafka",
+      },
+      {
+        icon: <SiSwagger />,
+        name: "swagger",
+      },
+      {
+        icon: <SiJira />,
+        name: "jira",
+      },
+      {
+        icon: <SiMysql />,
+        name: "mysql",
+      },
+      {
+        icon: <BiLogoPostgresql />,
+        name: "postgres",
+      },
+      {
+        icon: <SiMongodb />,
+        name: "mongoDB",
+      },
+      {
+        icon: <SiTypeorm />,
+        name: "typeorm",
+      },
+      {
+        icon: <FaWordpress />,
+        name: "wordpress",
+      },
+      {
+        icon: <FaShopify />,
+        name: "shopify",
+      },
+    ],
+  };
+
+  const about = {
+    title: "About me",
+    description:
+      "As a dedicated Full Stack Developer, here are my personal details for your reference.",
+    info: [
+      { fieldName: "Name", fieldValue: "Ahmad Siddiqui" },
+      { fieldName: "Phone", fieldValue: "+92 3097890103" },
+      { fieldName: "Experience", fieldValue: "2+ Years" },
+      { fieldName: "Skype", fieldValue: "live:.cid.aceb7e8d928e1874" },
+      { fieldName: "Nationality", fieldValue: "Pakistani" },
+      { fieldName: "Email", fieldValue: "reachahmadsiddiqui@gmail.com" },
+      { fieldName: "On Site Job", fieldValue: "Available" },
+      { fieldName: "Languages", fieldValue: "English, Urdu" },
     ],
   };
 
@@ -241,26 +286,28 @@ const ResumePage = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300 ">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300 ">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
             {/* About */}
